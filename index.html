@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
+    <title>Indycar</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <nav>
+      <a href="#home" id="siteLogo"
+        ><img src="assets/transparentLogo.png" alt=""
+      /></a>
+      <div class="linkSec">
+        <a href="#home" class="link">Home</a>
+        <a href="#driver" class="link">Drivers</a>
+        <a href="#driver" class="link" id="loginBtn">Login</a>
+      </div>
+    </nav>
+
+    <div id="app"></div>
+
+    <script type="module" src="app/app.js"></script>
     <script src="lib/jquery-3.7.1.min.js"></script>
-    <script src="app/app.js"></script>
   </body>
 </html>

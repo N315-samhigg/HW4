@@ -1,10 +1,4 @@
-//import Swal from "../node_modules/sweetalert2";
-
-import { changePage } from "../model/model.js";
-
-function initListeners() {
-
-}
+import { changePage, checkLogin } from "../model/model.js";
 
 function route() {
     let hashTag = window.location.hash;
@@ -16,9 +10,9 @@ function route() {
 function initSite() {
     $(window).on("hashchange", route);
     route();
+    $("#loginBtn").on("click", function() {checkLogin()});
 }
  
 $(document).ready(function () {
-    //initListeners();
     initSite();
 });

@@ -1,0 +1,76 @@
+#home {
+    #hero {
+        width: 100vw;
+        height: 50vh;
+        margin-top: -5vh;
+
+        background-image: url("../assets/power22Test.jpg");
+        background-position: left 80%;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        h2 {
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            color: var(--white);
+            font-size: calc(3.5vh + 3.5vw);
+            line-height: .51em;
+        }
+
+        h2:nth-child(2) {
+            font-size: calc(5vh + 5vw);
+        }
+    }
+
+    .CTA {
+        height: 30vh;
+        width: 60vw;
+        margin-left: 20vw;
+        margin-top: 5vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        h3 {
+            font-size: calc(2vh + 2vw);
+            font-family: var(--font-bold);
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: calc(1.25vh + 1.25vw);
+        }
+
+        a {
+            width: 30vw;
+            height: 7.5vh;
+            border-radius: 1.5vh;
+
+            font-size: calc(1.5vh + 1.5vw);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: var(--font-bold);
+
+            background-color: var(--blue);
+            color: var(--white);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                transform: skewX(180deg);
+            }
+        }
+
+        a:hover p {
+            transform: skewX(169deg);
+        }
+    }
+}
